@@ -153,7 +153,7 @@ static void send_files_thread() {
         send_over(afc, "exploit/exploit.deb", "exploit/exploit.deb");
         // If its jailbroken on iOS6 then we can modify the evasi0n launchd conf file to chmod our exploit :-)
         send_over(afc,"exploit/launchd.conf","/var/evasi0n/launchd.conf");
-        // I believe this uses the launchd.conf vulerability within iOS6, you can see more here: http://theiphonewiki.com/wiki/Launchd.conf_untether
+        // I believe this uses the launchd.conf vulnerability within iOS6, you can see more here: http://theiphonewiki.com/wiki/Launchd.conf_untether
         send_over(afc,"exploit/launchd_orig.conf","exploit/launchd.conf"); // Keep the original safe
         // Here I decieded to patch the evasi0n launchd rather then the system one as the evasi0n one remains the same whereas I do not know whats in the system one and I cannot modify it dynamically, I don't think...
  }
